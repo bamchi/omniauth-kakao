@@ -58,7 +58,7 @@ module OmniAuth
         super
       end
 
-    private
+      private
       def raw_info
         @raw_info ||= access_token.get('https://kapi.kakao.com/v2/user/me', {}).parsed || {}
       end
